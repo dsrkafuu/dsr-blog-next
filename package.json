@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "type": "module",
+  "name": "dsr-blog-vite",
+  "version": "9.0.0",
+  "description": "New generation personal blog powered by Vitepress.",
+  "license": "AGPL-3.0",
+  "author": "DSRKafuU <dsrkafuu@outlook.com> (https://dsrkafuu.net)",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "dependencies": {
+    "@dsrca/design": "^4.0.0"
+  },
+  "devDependencies": {
+    "@dsrca/config": "^4.1.0",
+    "eslint": "^9.13.0",
+    "prettier": "^3.3.3",
+    "sass-embedded": "^1.80.4",
+    "typescript": "~5.4.5",
+    "vitepress": "^1.4.1"
+  }
+}
