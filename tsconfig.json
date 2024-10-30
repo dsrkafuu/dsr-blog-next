@@ -1,4 +1,4 @@
 {
   "extends": "@vue/tsconfig/tsconfig.json",
-  "exclude": ["node_modules", "cache"]
+  "include": [".vitepress/**/*.ts"]
 }

@@ -1,4 +1,4 @@
-import { PageData } from 'vitepress';
+import type { PageData } from 'vitepress';
 import basics from '../meta/basics.json';
 import assets from '../meta/assets.json';
 
