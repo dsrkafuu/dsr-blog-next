@@ -1,11 +1,14 @@
 ---
 layout: 'home'
+date: 2024-10-30T14:20:00+08:00
+pubdate: 2019-08-16T14:00:00+08:00
 title: 'DSRBLOG'
+titleTemplate: false
 description: 'DSRKafuU 个人博客，Web/跨平台开发者。'
 keywords:
   - DSRKafuU
   - DSRBLOG
-  - 博客
+  - 个人博客
 ---
 
 **Personal**

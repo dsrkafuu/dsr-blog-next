@@ -12,14 +12,16 @@
     "preview": "vitepress preview"
   },
   "dependencies": {
-    "@dsrca/design": "^4.0.0"
+    "@dsrca/design": "^4.3.0"
   },
   "devDependencies": {
     "@dsrca/config": "^4.1.0",
+    "@vue/tsconfig": "^0.5.1",
     "eslint": "^9.13.0",
     "prettier": "^3.3.3",
-    "sass-embedded": "^1.80.4",
+    "sass-embedded": "^1.80.5",
     "typescript": "~5.4.5",
-    "vitepress": "^1.4.1"
+    "vitepress": "^1.4.2",
+    "vue-tsc": "^2.1.8"
   }
 }

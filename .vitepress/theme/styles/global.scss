@@ -1,16 +1,14 @@
-@use '@dsrca/design/reset' as reset;
-@use '@dsrca/design/colors' as colors;
-@use '@dsrca/design/markdown' as markdown;
-@use '@dsrca/design/prism' as prism;
+@use '../dsrca/design/variables' as var;
+@use '../dsrca/design/colors' as colors;
+@use '../dsrca/design/reset' as reset;
+@use '../dsrca/design/markdown' as markdown;
+@use '../dsrca/design/prism' as prism;
 
-@include colors.dsr-colors-full;
-@include colors.dsr-prism-full;
-@include markdown.dsr-markdown-style;
-@include prism.dsr-prism-style;
-
-* {
-  box-sizing: border-box;
-}
+@include colors.full;
+@include reset.sanitize;
+@include reset.custom;
+@include markdown.markdown;
+@include prism.token;
 
 html {
   height: 100%;
@@ -27,8 +25,8 @@ body {
   flex-direction: column;
   position: relative;
   overflow-x: hidden;
-  font-size: 15px;
-  font-family: 'Inter', 'Noto Sans SC', 'Noto Sans JP', sans-serif;
+  font-size: var.$font-md;
+  font-family: var.$family-body;
 }
 
 a {
@@ -61,5 +59,5 @@ code {
 pre,
 code,
 tt {
-  font-family: 'Fira Code', 'Noto Sans SC', 'Noto Sans JP', monospace;
+  font-family: var.$family-mono;
 }
