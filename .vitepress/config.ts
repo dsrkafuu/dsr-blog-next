@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress';
+import svgLoader from 'vite-svg-loader';
 import { tramsformHead } from './transform';
 import basics from '../meta/basics.json';
 
@@ -16,5 +17,8 @@ export default defineConfig({
   },
   transformPageData: (pageData) => {
     tramsformHead(pageData);
+  },
+  vite: {
+    plugins: [svgLoader()],
   },
 });

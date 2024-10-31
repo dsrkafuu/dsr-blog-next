@@ -1,8 +1,7 @@
 <template>
-  <div>
-    <div>{{ JSON.stringify(page) }}</div>
-    <Content />
-  </div>
+  <header class="header">
+    <nav class="navbar container"></nav>
+  </header>
 </template>
 
 <script setup lang="ts">
