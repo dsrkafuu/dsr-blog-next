@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "@dsrca/config": "^4.1.0",
+    "@types/node": "^22.8.4",
     "@vue/tsconfig": "^0.5.1",
     "eslint": "^9.13.0",
     "prettier": "^3.3.3",

@@ -1,15 +1,9 @@
 import './styles/global.scss';
 import './styles/fiximg.scss';
-
 import { Theme } from 'vitepress';
-import Layout from './Layout.vue';
+import MainLayout from './MainLayout.vue';
 
-/**
- * https://vitepress.dev/guide/custom-theme
- */
+// https://vitepress.dev/guide/custom-theme
 export default {
-  Layout,
-  enhanceApp({ app, router, siteData }) {
-    // ...
-  },
+  Layout: MainLayout,
 } satisfies Theme;

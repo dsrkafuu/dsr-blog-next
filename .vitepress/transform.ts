@@ -1,4 +1,4 @@
-import type { PageData } from 'vitepress';
+import { PageData } from 'vitepress';
 import basics from '../meta/basics.json';
 import assets from '../meta/assets.json';
 
@@ -6,7 +6,6 @@ export const tramsformHead = (pageData: PageData) => {
   if (!pageData.frontmatter.head) {
     pageData.frontmatter.head = [];
   }
-  console.log(111, import.meta.env);
 
   // basics
   pageData.frontmatter.head.push([

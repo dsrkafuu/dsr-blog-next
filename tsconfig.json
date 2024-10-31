@@ -1,4 +1,9 @@
 {
-  "extends": "@vue/tsconfig/tsconfig.json",
-  "include": [".vitepress/**/*.ts"]
+  "extends": "@dsrca/config/tsconfig.json",
+  "compilerOptions": {
+    "moduleResolution": "bundler",
+    "jsx": "preserve",
+    "jsxImportSource": "vue"
+  },
+  "exclude": ["node_modules"]
 }
