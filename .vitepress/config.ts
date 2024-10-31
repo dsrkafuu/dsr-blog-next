@@ -9,6 +9,7 @@ export default defineConfig({
   title: basics.name,
   titleTemplate: `:title | ${basics.name}`,
   description: basics.desc,
+  cleanUrls: true,
   transformPageData: (pageData) => {
     tramsformHead(pageData);
   },
