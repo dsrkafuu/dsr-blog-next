@@ -23,9 +23,9 @@ export const tramsformHead = (pageData: PageData) => {
   // 在文件夹内且为 index.md 的说明有 banner 图
   const bannerPath = join(cwd(), 'content', prefixPath, 'index.webp');
   const bannerExist = existsSync(bannerPath);
-  let opengraph = new URL(basics.opengraph, basics.baseURL);
+  let opengraph = new URL(basics.opengraph, basics.hostname);
   if (bannerExist) {
-    opengraph = new URL(`${prefixPath}/index.webp`, basics.baseURL);
+    opengraph = new URL(`${prefixPath}/index.webp`, basics.hostname);
   }
   // 文章发布和更新时间
   const updateTime = pageData.frontmatter.date;
@@ -110,7 +110,7 @@ export const tramsformHead = (pageData: PageData) => {
   ]);
   pageData.frontmatter.head.push([
     'meta',
-    { property: 'og:url', content: `${new URL(prefixPath, basics.baseURL)}` },
+    { property: 'og:url', content: `${new URL(prefixPath, basics.hostname)}` },
   ]);
 
   // seo meta
