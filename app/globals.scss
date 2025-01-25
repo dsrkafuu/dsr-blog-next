@@ -1,0 +1,23 @@
+@use '@dsrca/design/variables';
+@use '@dsrca/design/reset';
+@use '@dsrca/design/colors';
+
+@include reset.sanitize;
+@include colors.full;
+
+html,
+body {
+  height: 100%;
+  color: var(--color-font);
+  background-color: var(--color-body);
+  font-family: variables.$family-body;
+}
+
+pre,
+code {
+  font-family: variables.$family-mono;
+}
+
+.fa-secondary {
+  opacity: 0.4;
+}

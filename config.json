@@ -1,0 +1,44 @@
+{
+  "domain": "dsrkafuu.net",
+  "name": "DSRKafuU",
+  "bio": "声なき魚",
+  "desc": "Homepage of DSRKafuU and DSRGroup.",
+  "links": [
+    {
+      "key": "blog",
+      "icon": "blog",
+      "name": "Blog",
+      "href": "https://blog.dsrkafuu.net/"
+    },
+    {
+      "key": "github",
+      "icon": "github",
+      "name": "GitHub",
+      "href": "https://github.com/dsrkafuu"
+    },
+    {
+      "key": "twitter",
+      "icon": "twitter",
+      "name": "Twitter",
+      "href": "https://twitter.com/dsrkafuu"
+    },
+    {
+      "key": "bgm",
+      "icon": "tv-retro",
+      "name": "Bangumi",
+      "href": "https://bgm.tv/user/dsrkafuu"
+    },
+    {
+      "key": "steam",
+      "icon": "steam",
+      "name": "Steam",
+      "href": "https://steamcommunity.com/id/dsrkafuu/"
+    },
+    {
+      "key": "crypto",
+      "icon": "bitcoin",
+      "name": "Crypto",
+      "href": "/crypto"
+    }
+  ]
+}

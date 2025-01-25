@@ -1,0 +1,74 @@
+@use '@dsrca/design/layout';
+
+.main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--color-bg);
+  box-shadow: var(--box-shadow);
+  padding: 20px 24px;
+  border-radius: 8px;
+  display: flex;
+
+  @include layout.responsive('md') {
+    padding: 24px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.avatar {
+  flex: 0 0 auto;
+  width: 128px;
+  height: 128px;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.image {
+  width: 128px;
+  height: 128px;
+  text-align: center;
+  line-height: 128px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.meta {
+  flex: 1 1 auto;
+  text-align: center;
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include layout.responsive('md') {
+    margin-left: 0;
+    margin-top: 16px;
+  }
+}
+
+.name {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0 0 4px 0;
+}
+
+.bio {
+  margin: 0 0 8px 0;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

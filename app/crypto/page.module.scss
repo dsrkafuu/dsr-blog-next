@@ -1,0 +1,14 @@
+@use '@dsrca/design/layout';
+
+.main {
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 808px;
+
+  @include layout.responsive('md') {
+    padding: 16px;
+  }
+}
